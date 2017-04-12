@@ -1,0 +1,11 @@
+default:
+    autoload:
+        '': %paths.base%/test
+    suites:
+        i18n:
+            paths:
+                - %paths.base%/features/story
+            contexts:
+                - phalconer\test\story\I18nContext
+            filters:
+                tags: '@i18n'

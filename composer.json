@@ -1,0 +1,41 @@
+{
+    "name": "phalconer/phalconer-i18n-php",
+    "description": "The PHP version of Phalconer i18n module",
+    "keywords": ["phalconer", "web", "framework", "i18n"],
+    "homepage": "https://github.com/phalconer-projects/phalconer-i18n-php/",
+    "type": "library",
+    "license": "CC0",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "git",
+            "url":  "https://github.com/Behat/Behat.git"
+        },
+        {
+            "type": "git",
+            "url":  "https://github.com/phalconer-projects/phalconer-app-php.git"
+        },
+        {
+            "type": "git",
+            "url":  "https://github.com/phalconer-projects/phalconer-common-php.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "robmorgan/phinx": "*",
+        "ext-phalcon": "~3.0",
+        "phalcon/incubator": "~3.0",
+        "phalconer/phalconer-common-php": "master"
+    },
+    "require-dev": {
+        "behat/behat": "master",
+        "phpunit/phpunit": "^5.7",
+        "phalconer/phalconer-app-php": "master"
+    },
+    "autoload": {
+        "psr-4": {
+            "phalconer\\i18n\\": "src/",
+            "phalconer\\test\\": "test/"
+        }
+    }
+}
